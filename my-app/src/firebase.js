@@ -7,13 +7,13 @@ import { getAnalytics } from "firebase/analytics";
 // 🔥 Replace this with YOUR Firebase project config
 // Get it from: Firebase Console → Project Settings → Your apps → Web app
 const firebaseConfig = {
-  apiKey: "AIzaSyBCdrg_rqSjHtG1mVvvXz_wW19t_YR25-c",
-  authDomain: "cc-expense-tracker-b6931.firebaseapp.com",
-  projectId: "cc-expense-tracker-b6931",
-  storageBucket: "cc-expense-tracker-b6931.firebasestorage.app",
-  messagingSenderId: "419330703425",
-  appId: "1:419330703425:web:d0a6cca9598d7127f806c0",
-  measurementId: "G-XLCL0HZQWF",
+  apiKey: import.meta.env.VITE_FIREBASE_API_KEY,
+  authDomain: import.meta.env.VITE_FIREBASE_AUTH_DOMAIN,
+  projectId: import.meta.env.VITE_FIREBASE_PROJECT_ID,
+  storageBucket: import.meta.env.VITE_FIREBASE_STORAGE_BUCKET,
+  messagingSenderId: import.meta.env.VITE_FIREBASE_MESSAGING_SENDER_ID,
+  appId: import.meta.env.VITE_FIREBASE_APP_ID,
+  measurementId: import.meta.env.VITE_FIREBASE_MEASUREMENT_ID,
 };
 
 const app = initializeApp(firebaseConfig);
